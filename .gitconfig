@@ -1,0 +1,8 @@
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	log1 = log --oneline
+	logg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	change = !git commit -am \"change\" && git push
+	listfiles = diff-tree --no-commit-id --name-only -r HEAD
