@@ -1,0 +1,17 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	},
+	"postCreateCommand": "bash -c 'source $NVM_DIR/nvm.sh && if [ -f .nvmrc ]; then nvm install && nvm use; else nvm use default; fi'"
+}
